@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block name="ProductRule" template="Perspective_ProductRule::product_rule_view_model.phtml">
+                <arguments>
+                    <argument name="view_model"
+                              xsi:type="object">
+                              Perspective\ProductRule\ViewModel\ProductRule
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

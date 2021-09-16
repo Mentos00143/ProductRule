@@ -1,0 +1,11 @@
+<?php
+/** @var $block \Magento\Framework\View\Element\Template */
+/**@var \Perspective\ProductRule\ViewModel\ProductRule $viewModel*/
+$viewModel = $block->getData('view_model');
+?>
+<h3>List of products from Catalog Rule Condition</h3>
+<?php foreach ($viewModel->getProducts() ?? [] as $product): ?>
+    <div>
+        <?php echo $product->getName(); ?>
+    </div>
+<?php endforeach; ?>
